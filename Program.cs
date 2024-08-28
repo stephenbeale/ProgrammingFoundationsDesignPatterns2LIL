@@ -1,4 +1,4 @@
-﻿public class FlyWithWings: FlyBehaviour
+﻿public class FlyWithWings: IFlyBehaviour
 {
     public void fly()
     {
@@ -6,7 +6,7 @@
     }
 }
 
-public class FlyNoWay : FlyBehaviour
+public class FlyNoWay : IFlyBehaviour
 {
     public void fly()
     {
@@ -14,10 +14,18 @@ public class FlyNoWay : FlyBehaviour
     }
 }
 
-public class Quack : QuackBehaviour
+public class Quack : IQuackBehaviour
 {
     public void quack()
     {
         Console.WriteLine("Quack");
+    }
+}
+
+public class Squeak : IQuackBehaviour
+{
+    public void quack()
+    {
+        Console.WriteLine("Squeak");
     }
 }
