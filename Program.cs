@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿public class FlyWithWings: FlyBehaviour
+{
+    public void fly()
+    {
+        Console.WriteLine("I'm flying!!");
+    }
+}
